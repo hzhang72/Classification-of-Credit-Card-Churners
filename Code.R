@@ -12,7 +12,7 @@ library(kableExtra)
 library(randomForest)
 
 ## ***Load Data***
-data <-read.csv("finaldata1.csv")
+data <- read.csv("finaldata1.csv")
 data <- subset(data,select=-c(RowNumber, Surname, CustomerId)) # useless variables (counts, ids and names)
 all(!is.na(data)) # check if any missing values include / it shows no missing values here
 all(!is.null(data)) # Also shows no blank here. 
