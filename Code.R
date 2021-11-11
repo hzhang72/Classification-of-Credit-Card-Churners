@@ -70,7 +70,7 @@ for(i in seq_len(ncol(cat_pre))){
 index # Only one of them are significant, which is "HasCrCard". 
 
 ###################### Table for basic information ######################
-table1 <- data.frame("Category.pred" = colnames(cat_pre),"P-value" = store, "Reject" = index)
+table1 <- data.frame("Category.pred" = colnames(cat_pre), "P-value" = store, "Reject" = index)
 kable(table1, booktabs = T) %>% kable_styling(latex_options = "striped")
 
 ### ***Feature Selection: numeric variables***
