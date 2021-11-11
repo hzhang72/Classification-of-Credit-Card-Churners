@@ -99,7 +99,7 @@ for(i in seq_len(ncol(num_pre))){
 index2 # Two of them are not significant, which are "Tenure" and "EstimatedSalary".
 
 ###################### Table for basic information ######################
-table2 <- data.frame("Numeric.pred" = colnames(num_pre),"P-value" = store2, "Reject" = index2)
+table2 <- data.frame("Numeric.pred" = colnames(num_pre), "P-value" = store2, "Reject" = index2)
 kable(table2, booktabs = T) %>% kable_styling(latex_options = "striped")
 
 ### ***Rearrange Potential Predictors***
